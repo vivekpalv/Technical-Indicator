@@ -22,7 +22,7 @@ public class RestControl {
 
     @GetMapping("/store")
     public String store() throws IOException, CsvValidationException, ParseException {
-        CSVReader csvReader=new CSVReader(new FileReader("C:\\Users\\KINJAL PAL\\Downloads\\NIFTY.csv"));
+        CSVReader csvReader=new CSVReader(new FileReader("System.getProperty("user.name")+"Downloads//NIFTY.csv"));
         String[] strings = csvReader.readNext();
         int i=1;
         while ((strings=csvReader.readNext())!=null){
